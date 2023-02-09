@@ -1,0 +1,204 @@
+{
+	"id": "4eb61948fa8d46d64e714eb1f4cb483e",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.17",
+	"solcLongVersion": "0.8.17+commit.8df45f5f",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"project_assignment_1.sol": {
+				"content": "pragma solidity ^0.8.0;\r\n\r\nstruct Student{\r\n    uint roll;\r\n    string name;\r\n    uint[3] marks;\r\n}\r\n\r\n"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"errors": [
+			{
+				"component": "general",
+				"errorCode": "1878",
+				"formattedMessage": "Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.\n--> project_assignment_1.sol\n\n",
+				"message": "SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.",
+				"severity": "warning",
+				"sourceLocation": {
+					"end": -1,
+					"file": "project_assignment_1.sol",
+					"start": -1
+				},
+				"type": "Warning"
+			}
+		],
+		"sources": {
+			"project_assignment_1.sol": {
+				"ast": {
+					"absolutePath": "project_assignment_1.sol",
+					"exportedSymbols": {
+						"Student": [
+							10
+						]
+					},
+					"id": 11,
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.8",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "0:23:0"
+						},
+						{
+							"canonicalName": "Student",
+							"id": 10,
+							"members": [
+								{
+									"constant": false,
+									"id": 3,
+									"mutability": "mutable",
+									"name": "roll",
+									"nameLocation": "53:4:0",
+									"nodeType": "VariableDeclaration",
+									"scope": 10,
+									"src": "48:9:0",
+									"stateVariable": false,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_uint256",
+										"typeString": "uint256"
+									},
+									"typeName": {
+										"id": 2,
+										"name": "uint",
+										"nodeType": "ElementaryTypeName",
+										"src": "48:4:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_uint256",
+											"typeString": "uint256"
+										}
+									},
+									"visibility": "internal"
+								},
+								{
+									"constant": false,
+									"id": 5,
+									"mutability": "mutable",
+									"name": "name",
+									"nameLocation": "71:4:0",
+									"nodeType": "VariableDeclaration",
+									"scope": 10,
+									"src": "64:11:0",
+									"stateVariable": false,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_string_storage_ptr",
+										"typeString": "string"
+									},
+									"typeName": {
+										"id": 4,
+										"name": "string",
+										"nodeType": "ElementaryTypeName",
+										"src": "64:6:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_string_storage_ptr",
+											"typeString": "string"
+										}
+									},
+									"visibility": "internal"
+								},
+								{
+									"constant": false,
+									"id": 9,
+									"mutability": "mutable",
+									"name": "marks",
+									"nameLocation": "90:5:0",
+									"nodeType": "VariableDeclaration",
+									"scope": 10,
+									"src": "82:13:0",
+									"stateVariable": false,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_array$_t_uint256_$3_storage_ptr",
+										"typeString": "uint256[3]"
+									},
+									"typeName": {
+										"baseType": {
+											"id": 6,
+											"name": "uint",
+											"nodeType": "ElementaryTypeName",
+											"src": "82:4:0",
+											"typeDescriptions": {
+												"typeIdentifier": "t_uint256",
+												"typeString": "uint256"
+											}
+										},
+										"id": 8,
+										"length": {
+											"hexValue": "33",
+											"id": 7,
+											"isConstant": false,
+											"isLValue": false,
+											"isPure": true,
+											"kind": "number",
+											"lValueRequested": false,
+											"nodeType": "Literal",
+											"src": "87:1:0",
+											"typeDescriptions": {
+												"typeIdentifier": "t_rational_3_by_1",
+												"typeString": "int_const 3"
+											},
+											"value": "3"
+										},
+										"nodeType": "ArrayTypeName",
+										"src": "82:7:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_array$_t_uint256_$3_storage_ptr",
+											"typeString": "uint256[3]"
+										}
+									},
+									"visibility": "internal"
+								}
+							],
+							"name": "Student",
+							"nameLocation": "34:7:0",
+							"nodeType": "StructDefinition",
+							"scope": 11,
+							"src": "27:72:0",
+							"visibility": "public"
+						}
+					],
+					"src": "0:103:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}
